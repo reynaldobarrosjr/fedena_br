@@ -19,9 +19,9 @@
     <%= link_to "", {:controller => "exam", :action => "index"},
       :class => "option_buttons", :id => "examinations_button",:title => "Visualizar detalhes e resultados de provas." %>
     <%= link_to "", {:controller => "timetable", :action => "index"},
-      :class => "option_buttons", :id => "timetable_button",:title => "Timetable management module" %>
+      :class => "option_buttons", :id => "timetable_button",:title => "Módulo de Administação do quadro de horários" %>
     <%= link_to "", {:controller => "student_attendance", :action => "index"},
-      :class => "option_buttons", :id => "student_attendance_button", :title => "Manage the attendance for the students" %>
+      :class => "option_buttons", :id => "student_attendance_button", :title => "Gerenciar o frequência dos estudantes" %>
     <%= link_to "", {:controller => "configuration", :action => "index"},
       :class => "option_buttons", :id => "settings_button", :title => "Configurar os parâmetros básicos da Escola" %>
 
@@ -112,7 +112,7 @@
 
     <% if permitted_to? :index, :student_attendance or  permitted_to? :index, :attendances %>
       <%= link_to "", {:controller => "student_attendance", :action => "index"},
-        :class => "option_buttons", :id => "student_attendance_button", :title => "Manage the attendance for the students" %>
+        :class => "option_buttons", :id => "student_attendance_button", :title => "Gerenciar a frequência dos estudantes" %>
     <%end%>
 
     <% if permitted_to? :index, :exam %>
@@ -122,7 +122,7 @@
 
     <% if permitted_to? :index, :timetable %>
       <%= link_to "", {:controller => "timetable", :action => "index"},
-        :class => "option_buttons", :id => "timetable_button",:title => "Timetable management module" %>
+        :class => "option_buttons", :id => "timetable_button",:title => "Módulo de gerenciamento de quadro de horários" %>
     <%end%>
 
     <% if permitted_to? :index, :configuration %>
