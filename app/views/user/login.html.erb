@@ -9,7 +9,7 @@
   </div>
 
   <div id="help_top">
-    <div id="help_link"><a href="http://www.projectfedena.org/forum/" target="_blank">Help!</a></div>
+    <div id="help_link"><a href="http://www.projectfedena.org/forum/" target="_blank">Ajuda!</a></div>
   </div>
 
   <div id="login_area_bg">
@@ -17,24 +17,24 @@
     <% form_for :user do |form| %>
 
       <div id="login_area">
-        <label for="username">Username</label>
+        <label for="username">Usuário</label>
         <div id="username_textbox_bg">
           <%= form.text_field :username,
             :maxlength => 40%>
         </div>
 
-        <label for="password">Password</label>
+        <label for="password">Senha</label>
         <div id="password_textbox_bg">
           <%= form.password_field :password %>
         </div>
 
         <div id="checkbox_area">
           <input type="checkbox" id="remember" />
-          <label for="remember">Remember me</label>
+          <label for="remember">Lembrar</label>
         </div>
 
         <div id="submit_area">
-          <%= submit_tag "Login", :class => "submit" %>
+          <%= submit_tag "Entrar", :class => "submit" %>
         </div>
 
 
@@ -46,7 +46,7 @@
     </div>
   <% end %>
   <div id="help_forgot_pw">
-    <%= link_to "Help! I've Forgotten my Password?",
+    <%= link_to "Me ajude! Esqueci minha senha!",
       :controller => "user",
       :action => "forgot_password" %>
 
@@ -58,6 +58,7 @@
       <div id="footer_logo">
             <div id="powered_by">
           Powered by <a href="http://www.projectfedena.org/" target="_blank">Fedena</a>
+		  Traduzido por <a href="http://www.notazul.com" target="blank">notAzul</a>
         </div>
           <a href="http://www.projectfedena.org/" target="_blank" class="footer-logo"></a>
           

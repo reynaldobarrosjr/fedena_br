@@ -190,7 +190,7 @@ class UserController < ApplicationController
       user = User.find_by_username @user.username
       if user and User.authenticate?(@user.username, @user.password)
         session[:user_id] = user.id
-        flash[:notice] = "Welcome, #{user.first_name} #{user.last_name}!"
+        flash[:notice] = "Bem vindo, #{user.first_name} #{user.last_name}!"
         redirect_to :controller => 'user', :action => 'dashboard'
       else
         flash[:notice] = 'Invalid username or password combination'
@@ -212,7 +212,7 @@ class UserController < ApplicationController
     @employee = Employee.find_by_employee_number(@user.username)
     @student = Student.find_by_admission_no(@user.username)
     if @user.nil?
-      flash[:notice] = 'User profile not found.'
+      flash[:notice] = 'Perfil de usuário não encontrado.'
       redirect_to :action => 'dashboard'
     end
   end
