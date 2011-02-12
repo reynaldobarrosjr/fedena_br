@@ -9,7 +9,7 @@
 
   <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 
-  <p class="flash-msg">Selecione os responsáveis como contato de emergência.</p>
+  <p class="flash-msg">Selecione os responsáveis como um contato de emergência.</p>
 
   <% form_for :immediate_contact do |f| %>
     <ul id="parents-list">
@@ -23,6 +23,6 @@
         </li>
       <% end %>
     </ul>
-    <div id="submit-button"><%= submit_tag "" , :value => "► Finish", :id => 'finish-button' %></div>
+    <div id="submit-button"><%= submit_tag "" , :value => "► Finalizar", :id => 'finish-button' %></div>
   <% end %>
 </div>

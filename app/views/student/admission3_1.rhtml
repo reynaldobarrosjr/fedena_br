@@ -1,15 +1,15 @@
 
 <div id="content-header">
   <img src="/images/admission/admission_page_logo.jpg" />
-  <h1>Admission</h1>
-  <h3>Step 3 - Emergency contact</h3>
+  <h1>Matrícula</h1>
+  <h3>Passo 3 - Contato de Emergência</h3>
 </div>
 
 <div id="page-yield">
 
   <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 
-  <p class="flash-msg">Select one of the guardians as emergency contact.</p>
+  <p class="flash-msg">Selecione um dos responsáveis como um contato de emergência.</p>
 
   <% form_for :immediate_contact do |f| %>
     <ul id="parents-list">
@@ -23,6 +23,6 @@
         </li>
       <% end %>
     </ul>
-    <div id="submit-button"><%= submit_tag "" , :value => "► Finish", :id => 'finish-button' %></div>
+    <div id="submit-button"><%= submit_tag "" , :value => "► Finalizar", :id => 'finish-button' %></div>
   <% end %>
 </div>
