@@ -25,13 +25,13 @@
        ***********************************************/
       var anylinkmenu1={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} //First menu variable. Make sure "anylinkmenu1" is a unique name!
        anylinkmenu1.items = [
-        ["Calendar", "/calendar"],
-        ["Examination", "/exam"],
-        ["News", "/news"],
-        ["Event Creation", "/event"],
-        ["Human Resource", "/employee/hr"],
-        ["Finance", "/finance/index"],
-        ["Users", "/user"],
+        ["Calendário", "/calendar"],
+        ["Exames", "/exam"],
+        ["Notícias", "/news"],
+        ["Criar Eventos", "/event"],
+        ["Recursos Humanos", "/employee/hr"],
+        ["Financeiro", "/finance/index"],
+        ["Useários", "/user"],
       ]
       anylinkmenu.init("menuanchorclass");
     </script>
@@ -41,20 +41,20 @@
     <div id="header_bg">
       <div id="header">
         <div id="main-menu">
-          <%= link_to "Dashboard", :controller => "user", :action => "dashboard" %>
+          <%= link_to "Inicio", :controller => "user", :action => "dashboard" %>
           <% this_user = User.find(session[:user_id]) if session[:user_id] %>
           <%  if this_user.student? || this_user.employee? %>
-          <%= link_to "Calendar", :controller => "calendar" %>
+          <%= link_to "Calendário", :controller => "calendar" %>
           <% end %>
-          <%= link_to "Students", :controller => "student", :action => "index" \
+          <%= link_to "Estudantes", :controller => "student", :action => "index" \
             if this_user.admin? %>
-          <%= link_to "Attendance", :controller => "student_attendance", :action => "index" \
+          <%= link_to "Frequência", :controller => "student_attendance", :action => "index" \
             if this_user.admin? %>
-          <%= link_to "Settings", :controller => "configuration", :action => "index" \
+          <%= link_to "Configurações", :controller => "configuration", :action => "index" \
             if this_user.admin? %> <!--
-          <%= link_to "News", :controller => "news", :action => "index" \
+          <%= link_to "Notícias", :controller => "news", :action => "index" \
             if this_user.admin? %> -->
-          <%= link_to "Timetable", :controller => "timetable", :action => "index" \
+          <%= link_to "Grade", :controller => "timetable", :action => "index" \
             if this_user.admin? %>
           <% if this_user.admin? %>
             <a href="#" class="menuanchorclass" rel="anylinkmenu1">More ▼</a>
@@ -62,11 +62,11 @@
 
         </div>
         <div id="header_link" >
-          Logged in as:
+          Conectado como:
           <%= link_to this_user.first_name, :controller => 'user', :action => 'profile',
             :id => this_user.username %> &nbsp;|&nbsp;
-            <%= link_to "Messages",:controller => "reminder", :action => "index" %>(<%= render  :partial => 'layouts/reminder_count' %>)&nbsp;|&nbsp;
-          <%= link_to 'Log out', :controller => 'user', :action => 'logout' %>  &nbsp;&nbsp;
+            <%= link_to "Mensagens",:controller => "reminder", :action => "index" %>(<%= render  :partial => 'layouts/reminder_count' %>)&nbsp;|&nbsp;
+          <%= link_to 'Sair', :controller => 'user', :action => 'logout' %>  &nbsp;&nbsp;
         </div>
       </div>
     </div>
