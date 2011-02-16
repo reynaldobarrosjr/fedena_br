@@ -34937,3 +34937,1277 @@ Processing UserController#login (for 127.0.0.1 at 2011-02-12 23:41:10) [GET]
 Rendering template within layouts/login
 Rendering user/login
 Completed in 17ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/]
+/!\ FAILSAFE /!\  Mon Feb 14 13:17:01 -0200 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'fedena'@'localhost' (using password: YES)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Feb 14 13:17:06 -0200 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'fedena'@'localhost' (using password: YES)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-14 13:23:24) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mUser Columns (385.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (117.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (199.1ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (173.0ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+Completed in 2136ms (View: 797, DB: 875) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-14 13:23:44) [POST]
+  Parameters: {"commit"=>"Entrar", "action"=>"login", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [4;35;1mUser Columns (37.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (26.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (22.2ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (13.5ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user/dashboard
+Completed in 157ms (DB: 100) | 302 Found [http://0.0.0.0/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-14 13:23:44) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;35;1mUser Columns (255.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (102.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (7.7ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (3.6ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (34.9ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (104.3ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (17.5ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (29.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (56.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (78.2ms)
+  [4;36;1mNews Load (2.6ms)[0m   [0;1mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 1443ms (View: 619, DB: 614) | 200 OK [http://0.0.0.0/user/dashboard]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-14 13:23:50) [GET]
+  Parameters: {"action"=>"admission1", "controller"=>"student"}
+  [4;36;1mUser Columns (32.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (26.0ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.5ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSmsSetting Columns (177.7ms)[0m   [0;1mSHOW FIELDS FROM `sms_settings`[0m
+  [4;35;1mSmsSetting Load (11.7ms)[0m   [0mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;35;1mConfiguration Columns (19.6ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (17.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering student/admission1
+  [4;35;1mBatch Load (0.4ms)[0m   [0mSELECT * FROM `batches` WHERE (`batches`.`is_deleted` = 0 AND `batches`.`is_active` = 1) [0m
+  [4;36;1mBatch Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `batches`[0m
+  [4;35;1mCourse Columns (24.6ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mCourse Load (13.5ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;35;1mCountry Load (0.9ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mStudentCategory Load (0.4ms)[0m   [0mSELECT * FROM `student_categories` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.4ms)
+Completed in 2693ms (View: 1883, DB: 345) | 200 OK [http://0.0.0.0/student/admission1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-14 13:24:03) [POST]
+  Parameters: {"commit"=>"► Salvar e continuar", "action"=>"admission1", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "student"=>{"city"=>"", "pin_code"=>"", "student_category_id"=>"", "nationality_id"=>"76", "admission_no"=>"4", "country_id"=>"76", "language"=>"", "batch_id"=>"1", "phone1"=>"", "gender"=>"m", "phone2"=>"", "blood_group"=>"A+", "admission_date"=>"February 14, 2011", "last_name"=>"", "religion"=>"", "date_of_birth"=>"February 14, 2006", "address_line1"=>"", "birth_place"=>"", "email"=>"", "state"=>"", "address_line2"=>"", "middle_name"=>"teste", "first_name"=>"Teste"}, "controller"=>"student"}
+  [4;36;1mUser Columns (101.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (31.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (106.3ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (76.6ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (17.9ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSmsSetting Columns (24.2ms)[0m   [0;1mSHOW FIELDS FROM `sms_settings`[0m
+  [4;35;1mSmsSetting Load (12.3ms)[0m   [0mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;35;1mConfiguration Columns (6.8ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = '4') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '4') LIMIT 1[0m
+  [4;36;1mStudent Create (19.9ms)[0m   [0;1mINSERT INTO `students` (`city`, `photo_filename`, `pin_code`, `created_at`, `student_category_id`, `admission_no`, `nationality_id`, `immediate_contact_id`, `photo_data`, `updated_at`, `batch_id`, `language`, `country_id`, `photo_content_type`, `gender`, `phone1`, `admission_date`, `blood_group`, `phone2`, `status_description`, `is_deleted`, `last_name`, `is_active`, `date_of_birth`, `religion`, `is_sms_enabled`, `birth_place`, `address_line1`, `class_roll_no`, `first_name`, `middle_name`, `address_line2`, `state`, `email`) VALUES('', NULL, '', '2011-02-14 15:24:04', NULL, '4', 76, NULL, NULL, '2011-02-14 15:24:04', 1, '', 76, NULL, 'm', '', '2011-02-14', 'A+', '', NULL, 0, '', 1, '2006-02-14', '', 1, '', '', NULL, 'Teste', 'teste', '', '', '')[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '4') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply4@fedena.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`salt`, `created_at`, `reset_password_code_until`, `updated_at`, `username`, `admin`, `hashed_password`, `employee`, `reset_password_code`, `last_name`, `student`, `first_name`, `email`) VALUES('QloFJVAs', '2011-02-14 15:24:04', NULL, '2011-02-14 15:24:04', '4', 0, 'b416a305cc455a2d1b6d6efd89a774df4f464b34', 0, NULL, '', 1, 'Teste', 'noreply4@fedena.com')[0m
+  [4;36;1mSQL (89.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '4' AND `students`.id <> 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '4') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply4@fedena.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSmsSetting Load (0.2ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/student/admission2/4
+Completed in 1238ms (DB: 491) | 302 Found [http://0.0.0.0/student/admission1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission2 (for 127.0.0.1 at 2011-02-14 13:24:04) [GET]
+  Parameters: {"action"=>"admission2", "id"=>"4", "controller"=>"student"}
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (80.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (4.3ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (15.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (27.1ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mGuardian Load (25.9ms)[0m   [0mSELECT `guardians`.* FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mGuardian Columns (122.6ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+Rendering template within layouts/application
+Rendering student/admission2
+  [4;35;1mCountry Load (3.2ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (19.6ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (35.8ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (41.0ms)
+Completed in 629ms (View: 101, DB: 341) | 200 OK [http://0.0.0.0/student/admission2/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission2 (for 127.0.0.1 at 2011-02-14 13:24:15) [POST]
+  Parameters: {"commit"=>" ► Finalizar", "action"=>"admission2", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "id"=>"4", "controller"=>"student", "guardian"=>{"city"=>"", "occupation"=>"", "dob"=>"", "country_id"=>"76", "relation"=>"", "income"=>"", "last_name"=>"sda", "office_phone1"=>"", "office_address_line1"=>"", "office_phone2"=>"", "office_address_line2"=>"", "mobile_phone"=>"", "state"=>"", "email"=>"", "education"=>"", "first_name"=>"opasda", "ward_id"=>"4"}}
+  [4;36;1mUser Columns (30.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (29.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (11.4ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (24.6ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (25.6ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (11.3ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mGuardian Load (0.5ms)[0m   [0mSELECT `guardians`.* FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mGuardian Columns (48.9ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+  [4;35;1mSQL (22.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering student/admission2
+  [4;35;1mCountry Load (2.9ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (5.1ms)
+Completed in 532ms (View: 133, DB: 210) | 200 OK [http://0.0.0.0/student/admission2/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission2 (for 127.0.0.1 at 2011-02-14 13:24:22) [POST]
+  Parameters: {"commit"=>" ► Finalizar", "action"=>"admission2", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "id"=>"4", "controller"=>"student", "guardian"=>{"city"=>"", "occupation"=>"", "dob"=>"", "country_id"=>"76", "relation"=>"Pai", "income"=>"", "last_name"=>"sda", "office_phone1"=>"", "office_address_line1"=>"", "office_phone2"=>"", "office_address_line2"=>"", "mobile_phone"=>"", "state"=>"", "email"=>"", "education"=>"", "first_name"=>"opasda", "ward_id"=>"4"}}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.7ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (2.3ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mGuardian Load (0.5ms)[0m   [0mSELECT `guardians`.* FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mGuardian Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mGuardian Create (19.1ms)[0m   [0;1mINSERT INTO `guardians` (`city`, `occupation`, `dob`, `created_at`, `updated_at`, `relation`, `country_id`, `last_name`, `income`, `office_phone1`, `office_address_line1`, `office_phone2`, `office_address_line2`, `ward_id`, `first_name`, `email`, `mobile_phone`, `state`, `education`) VALUES('', '', NULL, '2011-02-14 15:24:22', '2011-02-14 15:24:22', 'Pai', 76, 'sda', '', '', '', '', '', 4, 'opasda', '', '', '', '')[0m
+  [4;35;1mSQL (35.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/student/admission2/4
+Completed in 207ms (DB: 68) | 302 Found [http://0.0.0.0/student/admission2/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission2 (for 127.0.0.1 at 2011-02-14 13:24:22) [GET]
+  Parameters: {"action"=>"admission2", "id"=>"4", "controller"=>"student"}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.3ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (3.5ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mGuardian Load (0.4ms)[0m   [0;1mSELECT `guardians`.* FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;35;1mGuardian Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `guardians`[0m
+Rendering template within layouts/application
+Rendering student/admission2
+  [4;36;1mCountry Load (0.8ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (1.1ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (6.8ms)
+Completed in 202ms (View: 118, DB: 19) | 200 OK [http://0.0.0.0/student/admission2/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission3 (for 127.0.0.1 at 2011-02-14 13:24:27) [GET]
+  Parameters: {"action"=>"admission3", "id"=>"4", "controller"=>"student"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (47.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.4ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.9ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mGuardian Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `guardians`[0m
+  [4;36;1mSQL (73.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+Rendering template within layouts/application
+Rendering student/admission3
+  [4;35;1mGuardian Load (0.6ms)[0m   [0mSELECT * FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (3.9ms)
+Completed in 346ms (View: 78, DB: 131) | 200 OK [http://0.0.0.0/student/admission3/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission3 (for 127.0.0.1 at 2011-02-14 13:24:29) [POST]
+  Parameters: {"commit"=>"► Finalizar", "action"=>"admission3", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "id"=>"4", "controller"=>"student", "immediate_contact"=>{"contact"=>"3"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (49.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.4ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.7ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mGuardian Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mSmsSetting Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `sms_settings`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '4' AND `students`.id <> 4) LIMIT 1[0m
+  [4;36;1mStudent Update (66.4ms)[0m   [0;1mUPDATE `students` SET `updated_at` = '2011-02-14 15:24:29', `immediate_contact_id` = 3 WHERE `id` = 4[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '4') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply4@fedena.com') LIMIT 1[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSmsSetting Load (0.3ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/student/previous_data/4
+Completed in 299ms (DB: 132) | 302 Found [http://0.0.0.0/student/admission3/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#previous_data (for 127.0.0.1 at 2011-02-14 13:24:29) [GET]
+  Parameters: {"action"=>"previous_data", "id"=>"4", "controller"=>"student"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.7ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (2.6ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mStudentPreviousData Columns (23.1ms)[0m   [0mSHOW FIELDS FROM `student_previous_datas`[0m
+  [4;36;1mStudentPreviousSubjectMark Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `student_previous_subject_marks`[0m
+  [4;35;1mStudentPreviousSubjectMark Load (11.0ms)[0m   [0mSELECT * FROM `student_previous_subject_marks` WHERE (`student_previous_subject_marks`.`student_id` = 4) [0m
+Rendering template within layouts/application
+Rendering student/previous_data
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (3.9ms)
+Completed in 256ms (View: 45, DB: 46) | 200 OK [http://0.0.0.0/student/previous_data/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:26:30) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (22.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (19.1ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (0.5ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (1.1ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (7.1ms)
+Rendered user/_header_link (39.7ms)
+Completed in 225ms (View: 111, DB: 53) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:28:30) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (0.7ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.8ms)
+Rendered user/_header_link (6.7ms)
+Completed in 139ms (View: 9, DB: 14) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:30:30) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (16.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (0.8ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (5.8ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.3ms)
+Rendered user/_header_link (6.8ms)
+Completed in 201ms (View: 54, DB: 34) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:32:30) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (0.5ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (26.1ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (3.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.5ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.8ms)
+Rendered user/_header_link (6.6ms)
+Completed in 123ms (View: 38, DB: 43) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:34:30) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (31.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (2.8ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.5ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.2ms)
+Rendered user/_header_link (6.1ms)
+Completed in 150ms (View: 61, DB: 45) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission3 (for 127.0.0.1 at 2011-02-14 13:35:15) [GET]
+  Parameters: {"action"=>"admission3", "id"=>"4", "controller"=>"student"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.8ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (4.7ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mGuardian Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `guardians`[0m
+  [4;36;1mSQL (11.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+Rendering template within layouts/application
+Rendering student/admission3
+  [4;35;1mGuardian Load (0.6ms)[0m   [0mSELECT * FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (5.3ms)
+Completed in 241ms (View: 63, DB: 31) | 200 OK [http://0.0.0.0/student/admission3/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission3 (for 127.0.0.1 at 2011-02-14 13:35:20) [POST]
+  Parameters: {"commit"=>"► Finalizar", "action"=>"admission3", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "id"=>"4", "controller"=>"student", "immediate_contact"=>{"contact"=>"3"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (46.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.6ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.6ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mGuardian Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `guardians` WHERE (`guardians`.ward_id = 4) [0m
+  [4;36;1mSmsSetting Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `sms_settings`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '4' AND `students`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '4') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply4@fedena.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSmsSetting Load (0.4ms)[0m   [0mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/student/previous_data/4
+Completed in 226ms (DB: 60) | 302 Found [http://0.0.0.0/student/admission3/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#previous_data (for 127.0.0.1 at 2011-02-14 13:35:20) [GET]
+  Parameters: {"action"=>"previous_data", "id"=>"4", "controller"=>"student"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.6ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.9ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+  [4;36;1mStudentPreviousData Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `student_previous_datas`[0m
+  [4;35;1mStudentPreviousSubjectMark Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `student_previous_subject_marks`[0m
+  [4;36;1mStudentPreviousSubjectMark Load (0.6ms)[0m   [0;1mSELECT * FROM `student_previous_subject_marks` WHERE (`student_previous_subject_marks`.`student_id` = 4) [0m
+Rendering template within layouts/application
+Rendering student/previous_data
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.0ms)
+Completed in 201ms (View: 22, DB: 13) | 200 OK [http://0.0.0.0/student/previous_data/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#previous_subject (for 127.0.0.1 at 2011-02-14 13:35:35) [POST]
+  Parameters: {"action"=>"previous_subject", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "id"=>"4", "controller"=>"student", "_"=>""}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (46.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (3.5ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.8ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 4) [0m
+Rendered student/_previous_subject (32.6ms)
+Completed in 227ms (View: 112, DB: 58) | 200 OK [http://0.0.0.0/student/previous_subject/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-14 13:37:16) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;36;1mUser Columns (33.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (1.9ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (2.9ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (1.7ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.5ms)
+  [4;35;1mNews Load (0.7ms)[0m   [0mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 254ms (View: 152, DB: 49) | 200 OK [http://0.0.0.0/user/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-14 13:37:25) [GET]
+  Parameters: {"action"=>"admission1", "controller"=>"student"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (48.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (1.4ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSmsSetting Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `sms_settings`[0m
+  [4;36;1mSmsSetting Load (0.8ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;36;1mConfiguration Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering student/admission1
+  [4;36;1mBatch Load (0.4ms)[0m   [0;1mSELECT * FROM `batches` WHERE (`batches`.`is_deleted` = 0 AND `batches`.`is_active` = 1) [0m
+  [4;35;1mBatch Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `batches`[0m
+  [4;36;1mCourse Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (1.6ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;36;1mCountry Load (0.6ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mStudentCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `student_categories` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.6ms)
+Completed in 518ms (View: 270, DB: 70) | 200 OK [http://0.0.0.0/student/admission1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-14 13:37:31) [POST]
+  Parameters: {"commit"=>"► Salvar e continuar", "action"=>"admission1", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "student"=>{"city"=>"", "pin_code"=>"", "student_category_id"=>"", "nationality_id"=>"76", "admission_no"=>"5", "country_id"=>"76", "language"=>"", "batch_id"=>"1", "phone1"=>"", "gender"=>"m", "phone2"=>"", "blood_group"=>"A+", "admission_date"=>"February 14, 2011", "last_name"=>"", "religion"=>"", "date_of_birth"=>"February 14, 2006", "address_line1"=>"", "birth_place"=>"", "email"=>"", "state"=>"", "address_line2"=>"", "middle_name"=>"", "first_name"=>""}, "controller"=>"student"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.6ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSmsSetting Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `sms_settings`[0m
+  [4;36;1mSmsSetting Load (0.6ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;36;1mConfiguration Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (8.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = '5') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '5') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '5') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering student/admission1
+  [4;35;1mBatch Load (0.4ms)[0m   [0mSELECT * FROM `batches` WHERE (`batches`.`is_deleted` = 0 AND `batches`.`is_active` = 1) [0m
+  [4;36;1mBatch Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `batches`[0m
+  [4;35;1mCourse Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mCourse Load (0.7ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;35;1mCountry Load (0.8ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mStudentCategory Load (11.6ms)[0m   [0mSELECT * FROM `student_categories` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.2ms)
+Completed in 582ms (View: 451, DB: 52) | 200 OK [http://0.0.0.0/student/admission1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-14 13:38:19) [POST]
+  Parameters: {"commit"=>"► Salvar e continuar", "action"=>"admission1", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "student"=>{"city"=>"", "pin_code"=>"", "student_category_id"=>"", "nationality_id"=>"76", "admission_no"=>"5", "country_id"=>"76", "language"=>"", "batch_id"=>"1", "phone1"=>"", "gender"=>"m", "phone2"=>"", "blood_group"=>"A+", "admission_date"=>"February 14, 2011", "last_name"=>"", "religion"=>"", "date_of_birth"=>"February 14, 2006", "address_line1"=>"", "birth_place"=>"", "email"=>"", "state"=>"", "address_line2"=>"", "middle_name"=>"", "first_name"=>"dfdfsfsf"}, "controller"=>"student"}
+  [4;36;1mUser Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (50.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (218.1ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (106.7ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (48.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSmsSetting Columns (3865.6ms)[0m   [0;1mSHOW FIELDS FROM `sms_settings`[0m
+  [4;35;1mSmsSetting Load (188.3ms)[0m   [0mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;35;1mConfiguration Columns (711.3ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (298.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = '5') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '5') LIMIT 1[0m
+  [4;36;1mStudent Create (0.5ms)[0m   [0;1mINSERT INTO `students` (`city`, `photo_filename`, `pin_code`, `created_at`, `student_category_id`, `admission_no`, `nationality_id`, `immediate_contact_id`, `photo_data`, `updated_at`, `batch_id`, `language`, `country_id`, `photo_content_type`, `gender`, `phone1`, `admission_date`, `blood_group`, `phone2`, `status_description`, `is_deleted`, `last_name`, `is_active`, `date_of_birth`, `religion`, `is_sms_enabled`, `birth_place`, `address_line1`, `class_roll_no`, `first_name`, `middle_name`, `address_line2`, `state`, `email`) VALUES('', NULL, '', '2011-02-14 15:38:25', NULL, '5', 76, NULL, NULL, '2011-02-14 15:38:25', 1, '', 76, NULL, 'm', '', '2011-02-14', 'A+', '', NULL, 0, '', 1, '2006-02-14', '', 1, '', '', NULL, 'dfdfsfsf', '', '', '', '')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '5') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply5@fedena.com') LIMIT 1[0m
+  [4;35;1mUser Create (20.6ms)[0m   [0mINSERT INTO `users` (`salt`, `created_at`, `reset_password_code_until`, `updated_at`, `username`, `admin`, `hashed_password`, `employee`, `reset_password_code`, `last_name`, `student`, `first_name`, `email`) VALUES('Fv0dsbJX', '2011-02-14 15:38:25', NULL, '2011-02-14 15:38:25', '5', 0, '5a3a97c602a71a30eb81b690708144b5e0b897aa', 0, NULL, '', 1, 'dfdfsfsf', 'noreply5@fedena.com')[0m
+  [4;36;1mSQL (217.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mStudent Load (0.8ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`admission_no` = BINARY '5' AND `students`.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '5') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'noreply5@fedena.com') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSmsSetting Load (0.4ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/student/admission2/5
+Completed in 5982ms (DB: 5750) | 302 Found [http://0.0.0.0/student/admission1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission2 (for 127.0.0.1 at 2011-02-14 13:38:28) [GET]
+  Parameters: {"action"=>"admission2", "id"=>"5", "controller"=>"student"}
+  [4;36;1mUser Columns (287.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (4.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (1.2ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (12.3ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 5) [0m
+  [4;35;1mGuardian Load (0.4ms)[0m   [0mSELECT `guardians`.* FROM `guardians` WHERE (`guardians`.ward_id = 5) [0m
+  [4;36;1mGuardian Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+Rendering template within layouts/application
+Rendering student/admission2
+  [4;35;1mCountry Load (82.9ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (54.2ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (83.9ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (88.9ms)
+Completed in 1054ms (View: 277, DB: 591) | 200 OK [http://0.0.0.0/student/admission2/5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission3 (for 127.0.0.1 at 2011-02-14 13:39:05) [GET]
+  Parameters: {"action"=>"admission3", "id"=>"5", "controller"=>"student"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (49.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.7ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (3.2ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`id` = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 5) [0m
+  [4;36;1mGuardian Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `guardians`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSELECT count(*) AS count_all FROM `guardians` WHERE (`guardians`.ward_id = 5) [0m
+Redirected to http://0.0.0.0:3000/student/previous_data/5
+Completed in 128ms (DB: 66) | 302 Found [http://0.0.0.0/student/admission3/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#previous_data (for 127.0.0.1 at 2011-02-14 13:39:05) [GET]
+  Parameters: {"action"=>"previous_data", "id"=>"5", "controller"=>"student"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.8ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (1.2ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 5) [0m
+  [4;36;1mStudentPreviousData Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `student_previous_datas`[0m
+  [4;35;1mStudentPreviousSubjectMark Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `student_previous_subject_marks`[0m
+  [4;36;1mStudentPreviousSubjectMark Load (0.4ms)[0m   [0;1mSELECT * FROM `student_previous_subject_marks` WHERE (`student_previous_subject_marks`.`student_id` = 5) [0m
+Rendering template within layouts/application
+Rendering student/previous_data
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (3.8ms)
+Completed in 122ms (View: 16, DB: 13) | 200 OK [http://0.0.0.0/student/previous_data/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:41:06) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (5.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (0.8ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.5ms)
+Rendered user/_header_link (6.4ms)
+Completed in 136ms (View: 62, DB: 23) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-14 13:43:06) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"FMWccmFflGM2/I9nK4AWDBJB9Wm+/N6QRBxW1qUGm0M=", "controller"=>"user", "_"=>""}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (45.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (0.7ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (5.6ms)
+Rendered user/_header_link (7.4ms)
+Completed in 235ms (View: 9, DB: 57) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;35;1mSQL (139.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-14 14:30:36) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;36;1mConfiguration Columns (264.4ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (181.9ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+Completed in 2731ms (View: 401, DB: 586) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-14 16:00:12) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mConfiguration Columns (50.3ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+Completed in 136ms (View: 45, DB: 51) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (88.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-15 23:56:07) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mConfiguration Columns (377.8ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (36.3ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+Completed in 788ms (View: 274, DB: 503) | 200 OK [http://0.0.0.0/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-15 23:56:25) [POST]
+  Parameters: {"commit"=>"Entrar", "action"=>"login", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"user", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [4;36;1mConfiguration Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+  [4;36;1mUser Columns (133.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (18.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user/dashboard
+Completed in 188ms (DB: 155) | 302 Found [http://0.0.0.0/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-15 23:56:25) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (54.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (152.8ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (3.6ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (79.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (2.4ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (82.0ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (88.1ms)
+  [4;35;1mNews Load (89.8ms)[0m   [0mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 757ms (View: 206, DB: 468) | 200 OK [http://0.0.0.0/user/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#admission1 (for 127.0.0.1 at 2011-02-15 23:57:14) [GET]
+  Parameters: {"action"=>"admission1", "controller"=>"student"}
+  [4;35;1mUser Columns (15.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (56.7ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (84.9ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mSmsSetting Columns (49.8ms)[0m   [0mSHOW FIELDS FROM `sms_settings`[0m
+  [4;36;1mSmsSetting Load (0.5ms)[0m   [0;1mSELECT * FROM `sms_settings` WHERE (`sms_settings`.`settings_key` = 'ApplicationEnabled') LIMIT 1[0m
+  [4;35;1mStudent Load (6.7ms)[0m   [0mSELECT * FROM `students` ORDER BY students.id DESC LIMIT 1[0m
+  [4;36;1mConfiguration Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (1.9ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AdmissionNumberAutoIncrement') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering student/admission1
+  [4;36;1mBatch Load (100.8ms)[0m   [0;1mSELECT * FROM `batches` WHERE (`batches`.`is_deleted` = 0 AND `batches`.`is_active` = 1) [0m
+  [4;35;1mBatch Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `batches`[0m
+  [4;36;1mCourse Columns (97.3ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (2.2ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;36;1mCountry Load (2.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mStudentCategory Load (2.1ms)[0m   [0;1mSELECT * FROM `student_categories` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.4ms)
+Completed in 1256ms (View: 719, DB: 429) | 200 OK [http://0.0.0.0/student/admission1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#index (for 127.0.0.1 at 2011-02-15 23:58:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"student"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.8ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering student/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.5ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.9ms)
+Completed in 134ms (View: 79, DB: 6) | 200 OK [http://0.0.0.0/student]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#search_ajax (for 127.0.0.1 at 2011-02-15 23:58:13) [POST]
+  Parameters: {"option"=>"active", "action"=>"search_ajax", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>"", "query"=>"rey"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (50.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.6ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+Rendering student/search_ajax
+  [4;35;1mSQL (134.8ms)[0m   [0mSELECT count(*) AS count_all FROM `students` WHERE ((students.first_name LIKE '%rey%') OR (students.middle_name LIKE '%rey%') OR (students.last_name LIKE '%rey%') OR (students.admission_no LIKE '%rey%')) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` WHERE ((students.first_name LIKE '%rey%') OR (students.middle_name LIKE '%rey%') OR (students.last_name LIKE '%rey%') OR (students.admission_no LIKE '%rey%')) [0m
+  [4;35;1mBatch Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `batches`[0m
+  [4;36;1mBatch Load (1.1ms)[0m   [0;1mSELECT * FROM `batches` WHERE (`batches`.`id` = 1) [0m
+  [4;35;1mCourse Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `courses`[0m
+  [4;36;1mCourse Load (2.2ms)[0m   [0;1mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+Completed in 596ms (View: 242, DB: 201) | 200 OK [http://0.0.0.0/student/search_ajax]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#search_ajax (for 127.0.0.1 at 2011-02-15 23:58:14) [POST]
+  Parameters: {"option"=>"active", "action"=>"search_ajax", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>"", "query"=>"reyna"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.6ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+Rendering student/search_ajax
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE ((students.first_name LIKE '%reyna%') OR (students.middle_name LIKE '%reyna%') OR (students.last_name LIKE '%reyna%') OR (students.admission_no LIKE '%reyna%')) [0m
+Completed in 115ms (View: 2, DB: 11) | 200 OK [http://0.0.0.0/student/search_ajax]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#search_ajax (for 127.0.0.1 at 2011-02-15 23:58:15) [POST]
+  Parameters: {"option"=>"active", "action"=>"search_ajax", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>"", "query"=>"reyn"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (47.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.6ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+Rendering student/search_ajax
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE ((students.first_name LIKE '%reyn%') OR (students.middle_name LIKE '%reyn%') OR (students.last_name LIKE '%reyn%') OR (students.admission_no LIKE '%reyn%')) [0m
+Completed in 133ms (View: 2, DB: 54) | 200 OK [http://0.0.0.0/student/search_ajax]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#search_ajax (for 127.0.0.1 at 2011-02-15 23:58:16) [POST]
+  Parameters: {"option"=>"active", "action"=>"search_ajax", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>"", "query"=>"rey"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (45.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mprivileges_users Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `privileges_users`[0m
+  [4;35;1mPrivilege Load (0.7ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+Rendering student/search_ajax
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `students` WHERE ((students.first_name LIKE '%rey%') OR (students.middle_name LIKE '%rey%') OR (students.last_name LIKE '%rey%') OR (students.admission_no LIKE '%rey%')) [0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM `students` WHERE ((students.first_name LIKE '%rey%') OR (students.middle_name LIKE '%rey%') OR (students.last_name LIKE '%rey%') OR (students.admission_no LIKE '%rey%')) [0m
+  [4;36;1mBatch Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `batches`[0m
+  [4;35;1mBatch Load (1.5ms)[0m   [0mSELECT * FROM `batches` WHERE (`batches`.`id` = 1) [0m
+  [4;36;1mCourse Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (0.9ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+Completed in 163ms (View: 28, DB: 58) | 200 OK [http://0.0.0.0/student/search_ajax]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#search_ajax (for 127.0.0.1 at 2011-02-15 23:58:21) [POST]
+  Parameters: {"option"=>"active", "action"=>"search_ajax", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>"", "query"=>""}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (55.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (1.3ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering student/search_ajax
+Completed in 97ms (View: 1, DB: 60) | 200 OK [http://0.0.0.0/student/search_ajax]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#view_all (for 127.0.0.1 at 2011-02-15 23:58:22) [GET]
+  Parameters: {"action"=>"view_all", "controller"=>"student"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.7ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering student/view_all
+  [4;36;1mBatch Load (0.4ms)[0m   [0;1mSELECT * FROM `batches` WHERE (`batches`.`is_deleted` = 0 AND `batches`.`is_active` = 1) [0m
+  [4;35;1mBatch Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `batches`[0m
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (0.8ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.9ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (12.6ms)
+Completed in 192ms (View: 60, DB: 10) | 200 OK [http://0.0.0.0/student/view_all]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#list_students_by_course (for 127.0.0.1 at 2011-02-15 23:58:26) [POST]
+  Parameters: {"action"=>"list_students_by_course", "batch_id"=>"1", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"student", "_"=>""}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (48.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (0.6ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.7ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`batch_id` = '1') ORDER BY first_name ASC[0m
+Rendered student/_students_by_course (38.5ms)
+Completed in 262ms (View: 84, DB: 55) | 200 OK [http://0.0.0.0/student/list_students_by_course]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentController#profile (for 127.0.0.1 at 2011-02-15 23:58:30) [GET]
+  Parameters: {"action"=>"profile", "id"=>"3", "controller"=>"student"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (53.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mprivileges_users Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `privileges_users`[0m
+  [4;36;1mPrivilege Load (2.1ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (1.2ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudentAdditionalField Load (68.9ms)[0m   [0mSELECT * FROM `student_additional_fields` WHERE (status = true) [0m
+  [4;36;1mStudentPreviousData Columns (35.0ms)[0m   [0;1mSHOW FIELDS FROM `student_previous_datas`[0m
+  [4;35;1mStudentPreviousData Load (0.3ms)[0m   [0mSELECT * FROM `student_previous_datas` WHERE (`student_previous_datas`.`student_id` = 3) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering student/profile
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;36;1mBatch Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `batches`[0m
+  [4;35;1mBatch Load (0.7ms)[0m   [0mSELECT * FROM `batches` WHERE (`batches`.`id` = 1) [0m
+  [4;36;1mCourse Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `courses`[0m
+  [4;35;1mCourse Load (0.8ms)[0m   [0mSELECT * FROM `courses` WHERE (`courses`.`id` = 1) [0m
+  [4;36;1mCountry Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.4ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` = 76) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` = 76) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.id = `privileges_users`.privilege_id WHERE (`privileges_users`.user_id = 1 ) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (3.8ms)
+Completed in 485ms (View: 140, DB: 174) | 200 OK [http://0.0.0.0/student/profile/3]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-15 23:58:39) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.7ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (0.5ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.5ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.1ms)
+  [4;35;1mNews Load (0.3ms)[0m   [0mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 148ms (View: 56, DB: 14) | 200 OK [http://0.0.0.0/user/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-16 00:00:40) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"user", "_"=>""}
+  [4;35;1mUser Columns (147.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (18.6ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (29.4ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (18.7ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (46.6ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (42.6ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.4ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (3.8ms)
+Rendered user/_header_link (46.9ms)
+Completed in 659ms (View: 184, DB: 319) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-16 00:01:27) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (0.6ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.5ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.1ms)
+  [4;36;1mNews Load (0.4ms)[0m   [0;1mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 185ms (View: 26, DB: 12) | 200 OK [http://0.0.0.0/user/dashboard]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-16 00:03:29) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"user", "_"=>""}
+  [4;36;1mUser Columns (157.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (13.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (7.9ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (30.0ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (58.1ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (53.8ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (34.2ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.4ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.0ms)
+Rendered user/_header_link (5.9ms)
+Completed in 511ms (View: 51, DB: 360) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#header_link (for 127.0.0.1 at 2011-02-16 00:05:29) [POST]
+  Parameters: {"action"=>"header_link", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"user", "_"=>""}
+  [4;36;1mUser Columns (23.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;36;1mEmployee Columns (13.2ms)[0m   [0;1mSHOW FIELDS FROM `employees`[0m
+  [4;35;1mEmployee Load (32.0ms)[0m   [0mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStudent Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mStudent Load (41.2ms)[0m   [0;1mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReminder Load (0.7ms)[0m   [0;1mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (4.5ms)
+Rendered user/_header_link (7.0ms)
+Completed in 340ms (View: 148, DB: 118) | 200 OK [http://0.0.0.0/user/header_link]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-16 00:14:17) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mUser Columns (37.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (2.4ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+Completed in 374ms (View: 197, DB: 45) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-02-16 00:14:23) [POST]
+  Parameters: {"commit"=>"Entrar", "action"=>"login", "authenticity_token"=>"Z4wmkXRoGyW9oNCWEqwp4/KuyJzo69eDaOTs7qxCFMo=", "controller"=>"user", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'admin') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user/dashboard
+Completed in 32ms (DB: 6) | 302 Found [http://0.0.0.0/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#dashboard (for 127.0.0.1 at 2011-02-16 00:14:24) [GET]
+  Parameters: {"action"=>"dashboard", "controller"=>"user"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'AvailableModules') [0m
+  [4;35;1mEmployee Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `employees`[0m
+  [4;36;1mEmployee Load (3.1ms)[0m   [0;1mSELECT * FROM `employees` WHERE (`employees`.`employee_number` = 'admin') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mStudent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (2.5ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`admission_no` = 'admin') LIMIT 1[0m
+Rendering template within layouts/dashboard
+Rendering user/dashboard
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReminder Load (0.6ms)[0m   [0mSELECT * FROM `reminders` WHERE (recipient = '1') [0m
+Rendered layouts/_reminder_count (7.1ms)
+  [4;36;1mNews Load (0.6ms)[0m   [0;1mSELECT * FROM `news` ORDER BY created_at desc, created_at DESC LIMIT 5[0m
+Completed in 208ms (View: 92, DB: 19) | 200 OK [http://0.0.0.0/user/dashboard]
