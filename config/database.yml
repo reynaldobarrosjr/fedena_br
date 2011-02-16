@@ -3,8 +3,8 @@ development:
       adapter: mysql
       database: fedena
       port: 3306
-      username: fedena
-      password: fedena
+      username: root
+      password:
 
 test: &test
       host: localhost
