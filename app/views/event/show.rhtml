@@ -1,7 +1,7 @@
 <div id="content-header">
   <img src="/images/manage_news/manage_news_logo.png" />
-  <h1>Events</h1>
-  <h3>Step 2 - Confirmation</h3>
+  <h1>Eventos</h1>
+  <h3>Passo 2 - Confirmação</h3>
   <div id="app-back-button">
     <%= link_to image_tag("/images/buttons/back.png", :border => 0), :back %>
   </div>
@@ -13,23 +13,23 @@
 
 
     <div class="detail-box">
-      <div class="label">  Title :</div>
+      <div class="label">  Título :</div>
       <div class="description">
         <%= @event.title %>
       </div>
     <div class="extender"></div>
-      <div class="label">Description :</div>
+      <div class="label">Descrição :</div>
       <div class="description">
         <%= @event.description %>
       </div>
     <div class="extender"></div>
       <div class="label">
-        Start date :</div>
+        Data inicial :</div>
       <div class="description">
         <%= @event.start_date %>
       </div>
     <div class="extender"></div>
-      <div class="label"> End date :</div>
+      <div class="label"> Data Final :</div>
       <div class="description">
         <%= @event.end_date %>
       </div>
@@ -38,9 +38,9 @@
    
     
     <div class="other-events">
-      <div class="head">Other Events</div>
+      <div class="head">Outros Eventos</div>
 <% if  @other_events.empty? %>
-No other events scheduled...
+Não há eventos agendados...
 <% end %>
 
 <% unless @other_events.empty? %>
@@ -96,11 +96,11 @@ No other events scheduled...
 
       <% else %>
 
-        => This event is common across all courses and departments<br/><br/>
+        => Este evento é comum para todos os cursos e departamentos<br/><br/>
 
       <% end %>
 
-    <%= link_to "► Confirm",{ :action=>"confirm_event",:id=>@event.id}, :class=> 'create'%>  <%= link_to "► Cancel", { :action=>"cancel_event" , :id=>@event.id },  :class=> 'create' %>
+    <%= link_to "► Confirmar",{ :action=>"confirm_event",:id=>@event.id}, :class=> 'create'%>  <%= link_to "► Cancelar", { :action=>"cancel_event" , :id=>@event.id },  :class=> 'create' %>
     </div>
 </div>
     

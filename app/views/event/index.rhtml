@@ -1,7 +1,7 @@
 <div id="content-header">
   <img src="/images/manage_news/manage_news_logo.png" />
-  <h1>Events</h1>
-  <h3>Step 1 - Event creation</h3>
+  <h1>Eventos</h1>
+  <h3>Passo 1 - Criação de Eventos</h3>
   <div id="app-back-button">
        <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
   </div>
@@ -11,29 +11,29 @@
   <% form_for :events do |f| %>
     <%= error_messages_for 'events' %>
     <div class="label-field-pair">
-      <label for="start-date">Start Date:</label>
+      <label for="start-date">Data inicial:</label>
       <div class="text-input-bg"><%= calendar_date_select_tag :start_date, @date, :time => true  %></div>
     </div>
     <div class="label-field-pair">
-      <label for="end-date">End Date:</label>
+      <label for="end-date">Data final:</label>
       <div class="text-input-bg"><%= calendar_date_select_tag :end_date, @date, :time => true  %></div>
     </div>
     <div class="label-field-pair">
-      <label for="title">Title:</label>
+      <label for="title">Título:</label>
       <div class="text-input-bg"><%= f.text_field :title %></div>
     </div>
     <div class="label-field-pair">
-      <label for="description">  Description :</label>
+      <label for="description">  Descrição :</label>
     </div>
     <%= f.text_area "description" %>
     <div class="label-field-pair">
-      <label for="is-holiday">Is Holiday?</label>
+      <label for="is-holiday">É feriado?</label>
       <%= f.check_box :is_holiday %>
     </div>
     <div class="label-field-pair">
-      <label for="end-date"> Event common to all</label>
+      <label for="end-date"> Eventos comum para todos</label>
       <%= f.check_box :is_common %>
     </div>
-    <%= f.submit "► Create Event" %>
+    <%= f.submit "► Criar  Evento" %>
   <% end %>
 </div>

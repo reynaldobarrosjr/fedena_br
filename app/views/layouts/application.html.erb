@@ -32,7 +32,7 @@
         ["Exames", "/exam"],
         ["Notícias", "/news"],
         ["Criar Eventos", "/event"],
-        ["Recursos Humanos", "/employee/hr"],
+        ["RH", "/employee/hr"],
         ["Financeiro", "/finance/index"],
         ["Usuários", "/user"],
       ]
@@ -49,11 +49,11 @@
           <%  if this_user.student? || this_user.employee? %>
             <%= link_to "Calendário", :controller => "calendar" %>
           <% end %>
-          <%= link_to "Estudantes", :controller => "student", :action => "index" \
+          <%= link_to "Alunos", :controller => "student", :action => "index" \
             if this_user.admin? %>
           <%= link_to "Frequência", :controller => "student_attendance", :action => "index" \
             if this_user.admin? %>
-          <%= link_to "Configurações", :controller => "configuration", :action => "index" \
+          <%= link_to "Configurarções", :controller => "configuration", :action => "index" \
             if this_user.admin? %> <!--
           <%= link_to "Notícias", :controller => "news", :action => "index" \
             if this_user.admin? %> -->

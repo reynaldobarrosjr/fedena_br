@@ -1,7 +1,7 @@
 
 <div class="course-select">
 <% unless @batch_events.empty? %>
-    <span class="title">Courses Associated:</span>
+    <span class="title">Cursos Associados:</span>
     <div>
       <ul id="category-list">
         <% @batch_events.each do |c| %>
@@ -12,10 +12,10 @@
         <% end %>
       </ul>
     </div>
-    <%= link_to_remote "Select more Courses", :url=>{:controller=>"event", :action=>"select_course", :id=>params[:id]} %><br/>
+    <%= link_to_remote "Selecione mais Cursos", :url=>{:controller=>"event", :action=>"select_course", :id=>params[:id]} %><br/>
   <% else %>
-    <span class="title">No Course selected for this event yet :</span>
-    <%= link_to_remote "Select Courses", :url=>{:controller=>"event", :action=>"select_course", :id=>params[:id]} %>
+    <span class="title">Não foram selecionados nenhum curso para este evento :</span>
+    <%= link_to_remote "Selecione os Cursos", :url=>{:controller=>"event", :action=>"select_course", :id=>params[:id]} %>
   <% end %>
   </div>
 

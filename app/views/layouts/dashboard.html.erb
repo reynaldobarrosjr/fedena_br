@@ -46,7 +46,7 @@
           <%  if this_user.student? || this_user.employee? %>
           <%= link_to "Calendário", :controller => "calendar" %>
           <% end %>
-          <%= link_to "Estudantes", :controller => "student", :action => "index" \
+          <%= link_to "Alunos", :controller => "student", :action => "index" \
             if this_user.admin? %>
           <%= link_to "Frequência", :controller => "student_attendance", :action => "index" \
             if this_user.admin? %>
