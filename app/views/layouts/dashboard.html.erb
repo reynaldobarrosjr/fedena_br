@@ -28,10 +28,10 @@
         ["Calendário", "/calendar"],
         ["Exames", "/exam"],
         ["Notícias", "/news"],
-        ["Criar Eventos", "/event"],
-        ["Recursos Humanos", "/employee/hr"],
+        ["Eventos", "/event"],
+        ["RH", "/employee/hr"],
         ["Financeiro", "/finance/index"],
-        ["Useários", "/user"],
+        ["Usuários", "/user"],
       ]
       anylinkmenu.init("menuanchorclass");
     </script>
@@ -57,7 +57,7 @@
           <%= link_to "Grade", :controller => "timetable", :action => "index" \
             if this_user.admin? %>
           <% if this_user.admin? %>
-            <a href="#" class="menuanchorclass" rel="anylinkmenu1">More ▼</a>
+            <a href="#" class="menuanchorclass" rel="anylinkmenu1">Mais ▼</a>
           <% end %>
 
         </div>
